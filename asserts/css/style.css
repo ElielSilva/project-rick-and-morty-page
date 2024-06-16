@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: aqua;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* editar o header */
+
+header {
+  height: 20vw;
+  width: 100%;
+  background-color: aliceblue;
+
+}
+
+header .container-left {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+header .container-left .image-logo-name {
+  width: 200px;
+  margin: 30px 30px 30px 150px;
+}
+
+header .container-left div img {
+  width: 200px;
+}
+
+#question__theme__div {
+  margin: 30px 30px 30px 130px;
+}
+
+header .container-left nav ul li {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  
+}
+
+header .container-left nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  background-color: rgba(12, 201, 12, 0.548);
+  border: solid rgba(253, 236, 2, 0.548);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.315);;
+}
+
+header .container-right {
+  width: 250px;
+  position: relative;
+  float: right;
+  width: 50%;
+}
+
+header .container-right img {
+  width: 40%;
+  position: relative;
+  float: inline-start;
+  margin-left: 200px;
+  
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
