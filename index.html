@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rick AND Morty</title>
-  <link rel="stylesheet" href="./asserts/css/style.css">
-  <script src="./asserts/js/script.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/utils.js" defer></script>
+  <script src="./assets/js/dom.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,7 @@
   <header>
     <div class="container-left">
       <div class="image-logo-name">
-        <img src="./asserts/img/Logo.png" alt="rick and morty">
+        <img src="./assets/img/Logo.png" alt="rick and morty">
       </div>
       <div id="question__theme__div" >
         <span id="question__theme_text" class="creepster-regular">Como prefere ver o site?</span>
@@ -32,8 +34,19 @@
       </nav>
     </div>
     <div class="container-right">
-      <img src="./asserts/img/rickandmortywhite.jpeg" alt="rick and morty">
+      <img src="./assets/img/rickandmorty.png" alt="rick and morty">
     </div>
   </header>
+  <main>
+    <section id="container__characters">
+    </section>
+    
+    
+  </main>
+  <div id="control_pages">
+    <button type="button" id="control__pages__ant">Anterior</button>
+    <h2 id="number__page">1</h2>
+    <button type="button" id="control__pages__prox">Proxímo</button>
+  </div>
 </body>
 </html>
