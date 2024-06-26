@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick AND Morty</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/utils.js" defer></script>
+  <script src="./assets/js/dom.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="folha de estilo" >
+</head>
+<body>
+  <header>
+    <div class="container-left">
+      <div class="image-logo-name">
+        <img src="./assets/img/Logo.png" alt="rick and morty">
+      </div>
+      <div id="question__theme__div" >
+        <span id="question__theme_text" class="creepster-regular">Como prefere ver o site?</span>
+        
+        <div class="theme-switch">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+              <ion-icon name="sunny" class="sun"></ion-icon>
+              <ion-icon name="moon-outline" class="moon"></ion-icon>
+              <div class="switcher"></div>
+          </label>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#container__characters" class="glow-on-hover">Home</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-right">
+      <img src="./assets/img/rickandmorty.png" alt="rick and morty" id="image-logo-theme">
+    </div>
+  </header>
+  <main>
+    <section id="container__characters">
+    </section>
+    
+    
+  </main>
+  <div id="control_pages">
+    <button type="button" id="control__pages__ant" class="glow-on-hover">Anterior</button>
+    <h2 id="number__page">1</h2>
+    <button type="button" id="control__pages__prox">Proxímo</button>
+  </div>
+  
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+</body>
+</html>
