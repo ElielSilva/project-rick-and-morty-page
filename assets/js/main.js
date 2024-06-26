@@ -1,6 +1,14 @@
+const body = document.getElementsByTagName("body")[0];
+const imageLogoTheme = document.getElementById('image-logo-theme');
 const sectionCharacters = document.getElementById("container__characters");
 const buttonProx = document.getElementById("control__pages__prox");
 const buttonAnt = document.getElementById("control__pages__ant");
+const buttonDarkMode = document.getElementById('checkbox');
+
+buttonDarkMode.addEventListener('change' , () => {
+  console.log('foii', body)
+  imageLogoTheme.src = './assets/img/';
+});
 
 buttonProx.addEventListener("click", () => {
   const number = parseInt(document.getElementById("number__page").innerText);
@@ -54,8 +62,8 @@ function createdCharactersElement(id, name, status, species , image){
   
   const imgCharacter = createCharacterImageElement(image)
   
-  const ACharacter = createCustomElement('a', 'character__link', 'Detalhes')
-  ACharacter.href = `./index.html/${id}`;
+  const ACharacter = createCustomElement('a', 'glow-on-hover', 'Detalhes')
+  ACharacter.href = `./pages/characterDetails.html?id=${id}`;
 
   
 

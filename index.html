@@ -23,18 +23,26 @@
       </div>
       <div id="question__theme__div" >
         <span id="question__theme_text" class="creepster-regular">Como prefere ver o site?</span>
-        <input type="radio"></button>
+        
+        <div class="theme-switch">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+              <ion-icon name="sunny" class="sun"></ion-icon>
+              <ion-icon name="moon-outline" class="moon"></ion-icon>
+              <div class="switcher"></div>
+          </label>
+        </div>
       </div>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a href="#container__characters" class="glow-on-hover">Home</a></li>
           <li><a href="">Sobre</a></li>
           <li><a href="">Contato</a></li>
         </ul>
       </nav>
     </div>
     <div class="container-right">
-      <img src="./assets/img/rickandmorty.png" alt="rick and morty">
+      <img src="./assets/img/rickandmorty.png" alt="rick and morty" id="image-logo-theme">
     </div>
   </header>
   <main>
@@ -44,9 +52,14 @@
     
   </main>
   <div id="control_pages">
-    <button type="button" id="control__pages__ant">Anterior</button>
+    <button type="button" id="control__pages__ant" class="glow-on-hover">Anterior</button>
     <h2 id="number__page">1</h2>
     <button type="button" id="control__pages__prox">Proxímo</button>
   </div>
+  
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
 </body>
 </html>

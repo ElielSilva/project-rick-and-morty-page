@@ -1,4 +1,20 @@
-console.log('utils.js carregado');
+async function getCharaterAPI(rangeIds) {
+  const URLapi = `https://rickandmortyapi.com/api/character/${rangeIds}`
+
+  const response = await fetch(URLapi);
+  const result = await response.json();
+  // console.log(result);
+  return traductionInfo(result)
+}
+
+async function getOneCharaterAPI(id) {
+  const URLapi = `https://rickandmortyapi.com/api/character/${id}`
+
+  const response = await fetch(URLapi);
+  const result = await response.json();
+  console.log(result);
+  return result
+}
 
 function traductionInfo(params) {
   const result = params.map((data) => {
@@ -13,14 +29,6 @@ function traductionInfo(params) {
   return result
 }
 
-async function getCharaterAPI(rangeIds) {
-  const URLapi = `https://rickandmortyapi.com/api/character/${rangeIds}`
-
-  const response = await fetch(URLapi);
-  const result = await response.json();
-  console.log(result);
-  return traductionInfo(result)
-}
 
 function rangeNumbers(start) {
   var ans = [];
@@ -44,5 +52,6 @@ function rangeNumbers(start) {
 
 window.utils = {
   rangeNumbers,
-  getCharaterAPI
+  getCharaterAPI,
+  getOneCharaterAPI
 };
